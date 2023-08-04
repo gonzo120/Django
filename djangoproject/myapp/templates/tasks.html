@@ -5,7 +5,8 @@
 {% for task in tasks %}
 
 <div>
-    
+    <h1>{% if task.done == False %} ⏱ {% else %} ✅ {% endif %}  {{task.title}} </h1>
+     
     <h1>Project: {{task.title}}</h1>
     <button>
         Delete
